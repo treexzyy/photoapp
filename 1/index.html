@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoApp — Інноваційна платформа для обробки фото</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайту -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo" data-page="home">Photo<span>App</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                    <li><a href="#photoapp" class="nav-link" data-page="photoapp">PhotoApp</a></li>
+                    <li><a href="#design" class="nav-link" data-page="design">Design</a></li>
+                    <li><a href="#download" class="nav-link btn-download" data-page="download">Download</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ОСНОВНИЙ ВМІСТ (СТОРІНКИ) -->
+    <main>
+
+        <!-- 1. СТОРІНКА HOME -->
+        <section id="page-home" class="page-section active">
+            <div class="hero-section">
+                <div class="glow-bg glow-1"></div>
+                <div class="glow-bg glow-2"></div>
+
+                <div class="container hero-container">
+                    <div class="hero-content">
+                        <div class="badge">✨ Версія 2.0 вже доступна</div>
+                        <h1 class="hero-title">
+                            Майбутнє вашої фотографії у <span>твоїх руках</span>
+                        </h1>
+                        <p class="hero-description">
+                            Перетворюйте звичайні знімки на неонові шедеври за допомогою інтелектуальних алгоритмів PhotoApp. Обробка одним кліком, професійні фільтри та нескінченна творчість.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#download" class="btn-primary" data-page="download">Спробувати безкоштовно</a>
+                            <a href="#photoapp" class="btn-secondary" data-page="photoapp">Переглянути демо</a>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">4.9★</span>
+                                <span class="stat-label">Оцінка користувачів</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-number">2M+</span>
+                                <span class="stat-label">Завантажень</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">AI Фільтрів</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-card">
+                            <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=800&q=80" alt="Futuristic Photo Editor" class="hero-img">
+                        </div>
+                        
+                        <div class="floating-card card-1">
+                            <div class="icon">⚡</div>
+                            <div>
+                                <h4>AI Покращення</h4>
+                                <p>Автоматичний баланс</p>
+                            </div>
+                        </div>
+
+                        <div class="floating-card card-2">
+                            <div class="icon">🎨</div>
+                            <div>
+                                <h4>Neon Style</h4>
+                                <p>Кінематографічний колір</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. СТОРІНКА PHOTOAPP -->
+        <section id="page-photoapp" class="page-section">
+            <div class="container page-content">
+                <div class="section-header">
+                    <div class="badge">⚡ Технології обробки</div>
+                    <h2 class="page-title">Інструменти <span>PhotoApp</span></h2>
+                    <p class="page-subtitle">Відкрийте для себе повну потужність штучного інтелекту у графіці</p>
+                </div>
+
+                <!-- Слайдер Порівняння До / Після -->
+                <div class="slider-wrapper">
+                    <h3 class="slider-title">Потягніть повзунок для порівняння результату:</h3>
+                    <div class="ba-slider" id="baSlider">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80" class="img-after" alt="Після обробки">
+                        <div class="img-before-wrapper">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80" class="img-before" alt="До обробки">
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="slider-range" id="sliderRange">
+                        <div class="slider-button" id="sliderBtn"></div>
+                    </div>
+                </div>
+
+                <!-- Функціональні можливості -->
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">✨</div>
+                        <h3>Cyber Glow Engine</h3>
+                        <p>Автоматичне накладання неонового світла з урахуванням об'єму та глибини об'єктів у кадрі.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👤</div>
+                        <h3>Smart Portrait AI</h3>
+                        <p>Решифрування текстури шкіри, виділення очей та кінематографічна корекція портретів у 1 клік.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔮</div>
+                        <h3>Style Relighting</h3>
+                        <p>Зміна віртуального джерела світла після зйомки — додавайте джерела будь-якого кольору.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>4K Ultra Export</h3>
+                        <p>Збереження зображень без найменшої втрати чіткості у форматах RAW, PNG та WebP.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. СТОРІНКА DESIGN -->
+        <section id="page-design" class="page-section">
+            <div class="container page-content">
+                <div class="section-header">
+                    <div class="badge">🎨 Креативна галерея</div>
+                    <h2 class="page-title">Дизайн та <span>Ресурси</span></h2>
+                    <p class="page-subtitle">Готові пресети, шаблони та графічні набори для ваших проєктів</p>
+                </div>
+
+                <!-- Фільтри ресурсів -->
+                <div class="design-filter">
+                    <button class="filter-btn active" data-filter="all">Усі ресурси</button>
+                    <button class="filter-btn" data-filter="preset">Пресети</button>
+                    <button class="filter-btn" data-filter="ui">UI Набори</button>
+                    <button class="filter-btn" data-filter="font">Шрифти</button>
+                </div>
+
+                <!-- Галерея карт робіт -->
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="preset">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80" alt="Cyberpunk Preset">
+                        <div class="gallery-overlay">
+                            <h4>Cyberpunk Cyberpunk 2099</h4>
+                            <span class="gallery-tag">Preset</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="ui">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80" alt="Neon HUD UI Kit">
+                        <div class="gallery-overlay">
+                            <h4>Neon HUD Interface</h4>
+                            <span class="gallery-tag">UI Kit</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="font">
+                        <img src="https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=600&q=80" alt="Futuristic Font">
+                        <div class="gallery-overlay">
+                            <h4>Neo-Tokio Display Font</h4>
+                            <span class="gallery-tag">Font</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="preset">
+                        <img src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=600&q=80" alt="Vaporwave Colors">
+                        <div class="gallery-overlay">
+                            <h4>Vaporwave Sunset</h4>
+                            <span class="gallery-tag">Preset</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. СТОРІНКА DOWNLOAD -->
+        <section id="page-download" class="page-section">
+            <div class="container page-content">
+                <div class="section-header">
+                    <div class="badge">💾 Завантажити додаток</div>
+                    <h2 class="page-title">Оберіть свій <span>Тариф</span></h2>
+                    <p class="page-subtitle">Розпочніть створення унікальних фотографій вже сьогодні</p>
+                </div>
+
+                <!-- Картки тарифів -->
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <h3>Starter Free</h3>
+                        <div class="price">0 ₴<span>/міс</span></div>
+                        <ul class="price-features">
+                            <li>✓ До 10 фото на день</li>
+                            <li>✓ 5 базових неонових пресетів</li>
+                            <li>✓ Стандартний експорт (HD)</li>
+                            <li class="disabled">✗ Без підтримки RAW</li>
+                        </ul>
+                        <a href="#" class="btn-secondary price-btn">Завантажити</a>
+                    </div>
+
+                    <div class="price-card popular">
+                        <div class="popular-badge">Популярний</div>
+                        <h3>Pro Creator</h3>
+                        <div class="price">299 ₴<span>/міс</span></div>
+                        <ul class="price-features">
+                            <li>✓ Необмежена кількість фото</li>
+                            <li>✓ 50+ AI Пресетів та неонів</li>
+                            <li>✓ 4K та RAW експорт</li>
+                            <li>✓ Пріоритетна обробка</li>
+                        </ul>
+                        <a href="#" class="btn-primary price-btn">Спробувати Pro</a>
+                    </div>
+
+                    <div class="price-card">
+                        <h3>Studio Team</h3>
+                        <div class="price">799 ₴<span>/міс</span></div>
+                        <ul class="price-features">
+                            <li>✓ Все що є в Pro та 5 ліцензій</li>
+                            <li>✓ Хмарне сховище 1 ТБ</li>
+                            <li>✓ API доступ для автоматизації</li>
+                            <li>✓ Персональна підтримка 24/7</li>
+                        </ul>
+                        <a href="#" class="btn-secondary price-btn">Замовити</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ПІДВАЛ САЙТУ (FOOTER) -->
+    <footer class="footer">
+        <div class="container footer-container">
+            
+            <div class="footer-col">
+                <a href="#" class="logo footer-logo" data-page="home">Photo<span>App</span></a>
+                <p class="footer-info">
+                    PhotoApp — інноваційна платформа для графічного дизайну та обробки фотографій з AI.<br>
+                    Ми створюємо інструменти майбутнього для фотографів, дизайнерів та контент-мейкерів.<br>
+                    Покращуйте якість знімків, додавайте неонові ефекти та редагуйте фото в один клік.<br>
+                    Приєднуйтесь до нашої спільноти понад 2 мільйонів активних користувачів по всьому світу.<br>
+                    Творіть без меж та втілюйте найсміливіші креативні ідеї разом з нами!
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Карта сайту</h3>
+                <ul class="footer-links">
+                    <li><a href="#home" data-page="home">Головна сторінка (Home)</a></li>
+                    <li><a href="#photoapp" data-page="photoapp">Про додаток PhotoApp</a></li>
+                    <li><a href="#design" data-page="design">Можливості та Design</a></li>
+                    <li><a href="#download" data-page="download">Завантажити версію 2.0</a></li>
+                    <li><a href="#download" data-page="download">Контакти та Підтримка</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Наш офіс</h3>
+                <div class="footer-contacts">
+                    <p>📍 м. Київ, вул. Хрещатик, 1</p>
+                    <p>📞 +38 (044) 123-45-67</p>
+                </div>
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.5422891963756!2d30.521256315731388!3d50.4501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce508b98d9f1%3A0x33cfdfdb90c9b58f!2z0KXRgNC10YnQsNGC0LjQuiwg0JrQuNGX0LI!5e0!3m2!1suk!2sua!4v1680000000000!5m2!1suk!2sua" 
+                        width="100%" 
+                        height="130" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 PhotoApp Inc. Усі права захищені.</p>
+                <div class="footer-legal">
+                    <a href="#">Політика конфіденційності</a>
+                    <a href="#">Умови використання</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Підключення JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
